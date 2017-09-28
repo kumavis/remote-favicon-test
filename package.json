@@ -1,0 +1,17 @@
+{
+  "name": "favicon-play",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify index.js > bundle.js",
+    "start": "beefy index.js:bundle.js --live --open"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "debounce": "^1.0.2",
+    "get-favicons": "^1.0.0",
+    "hyperquest": "^2.1.2"
+  }
+}
