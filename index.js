@@ -1,16 +1,23 @@
 const debounce = require('debounce')
 const urlUtils = require ('url')
 
+//
+// setup DOM
+//
 
 const input = document.createElement('input')
 input.value = 'https://github.com'
 document.body.appendChild(input)
-input.addEventListener('input', debounce(urlDidChange, 300))
 
 const image = document.createElement('img')
 document.body.appendChild(image)
 
 
+//
+// Listen for url
+//
+
+input.addEventListener('input', debounce(urlDidChange, 300))
 urlDidChange()
 
 
